@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Array01</title>
+</head>
+<body>
+
+<script>
+let arr = ['a', 'b', 'c', 'd'];
+
+const [d, c, b, a] = arr;
+
+document.write("Array destructuring: <br/>")
+document.write(a + " "+ b+ " " + c+ " " + d)
+document.write("<br/><br/>")
+
+const obj = {
+    A: "A",
+    B: 'B',
+    C: 'C',
+    D: 'D'
+};
+
+const { D, C, B, A } = obj;
+
+document.write("Object destructuring: <br/>")
+document.write(A + " "+ B+ " " + C+ " " + D)
+
+document.write("<br/><br/>")
+
+arr = [null, null, null, null];
+
+document.write("Array spreading: <br/>")
+let tmp = [...arr, 'e', 'f', 'g', 'h'];
+document.write(tmp)
+document.write("<br/><br/>")
+
+let obj2 = {
+    E: 'E',
+    F: 'F',
+    G: 'G',
+    H: 'H'
+};
+
+obj2.I = 'I';
+document.write(JSON.stringify(obj2))
+document.write("<br/><br/>")
+
+
+
+</script>
+
+</body>
+</html>

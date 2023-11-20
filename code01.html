@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Code01</title>
+</head>
+<body>
+
+<p id="demo1">value1<p>
+<p id="demo2">value2<p>
+
+<button onclick="clickhandle()">click me</button>
+
+<script>
+const click = (val) => eval(val + "+ 10")
+
+//const click2 = (val) => eval(val + "+ 10")       // return value
+const click2 = (val) => () => eval(val + "+ 10")   // return function
+
+function clickhandle() {
+    console.log("clickhandle()");
+    //let msg = "Hello World"
+    let msg1 = click("10")  // value
+    let msg2 = click2("10") // function
+
+    document.getElementById("demo1").innerHTML = msg1
+    document.getElementById("demo2").innerHTML = msg2
+
+}
+</script>
+
+
+</body>
+</html>

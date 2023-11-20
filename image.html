@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>This is test</title>
+</head>
+
+<body>
+    <h1>Bulb on/off</h1>
+    <p id="para">Bulb is off</p>
+
+    <img id="bulb" src="pic_bulboff.gif" alt="Bulb image">
+    <br>
+    <button onclick="onChange()">change</button>
+
+    <script>
+    function onChange() {
+        //alert("Hello World!");
+        let bSrc = ``;
+        document.getElementById("bulb").src = "data:image/png;base64," + bSrc;
+    }
+
+    </script>
+
+</body>
+
+</html>
